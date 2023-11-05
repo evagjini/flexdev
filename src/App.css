@@ -1,10 +1,11 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 .container {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: #f5f7f8;
   padding: 20px;
 }
@@ -12,12 +13,13 @@
   background-color: white;
   border-radius: 10px;
   padding: 10px;
+  height: 100vh;
 }
 
 .vertical-line {
-  border-left: 1px solid black; /* Adjust the color and thickness as needed */
-  height: 50px; /* Adjust the height of the line as needed */
-  margin: 0 10px; /* Adjust the margin to control the space between the line and the text/icon */
+  border-left: 1px solid black;
+  height: 50px;
+  margin: 0 10px;
 }
 .buttons {
   padding: 2px;
@@ -25,12 +27,13 @@
   border-color: transparent;
   width: 200px;
   height: 30px;
+  cursor: pointer;
 }
 .header-buttons {
   display: flex;
-  flex-direction: row;
   gap: 6px;
 }
+
 .buttons-container {
   display: flex;
   justify-content: flex-start;
@@ -41,10 +44,63 @@
   padding: 2px;
   border-radius: 3px;
   width: 200px;
-  border-color: gray;
+  border-color: #eeeeeb;
+
+  outline-color: #f5f7f8;
   height: 30px;
 }
 .break-style {
   margin-top: 6px;
   color: #e5eedc;
+}
+.new-note-input {
+  display: block;
+  border: transparent;
+  width: 100%;
+  outline: none;
+  font-size: large;
+  padding: 10px;
+}
+
+.form-inputs {
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.new-notes {
+  display: flex;
+  flex-direction: column;
+}
+.all-notes {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.break-style {
+  margin: 5px 0;
+  color: #e5eedc;
+}
+.save-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin: 20px;
+}
+.p {
+  margin-top: 6px;
+  font-size: 22px;
+  color: #868984;
+}
+.note-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
