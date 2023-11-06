@@ -23,8 +23,6 @@ export default function NewNote() {
     setNotes([...notes, newNote]);
     localStorage.setItem("notes", JSON.stringify([...notes, newNote]));
 
-    console.log(notes);
-
     setTitle("");
     setDescription("");
     navigate("/");
@@ -62,7 +60,10 @@ export default function NewNote() {
           </form>
         </div>
       </div>
-      <div className="header-buttons" style={{ justifyContent: "flex-end" }}>
+      <div
+        className="header-buttons"
+        style={{ justifyContent: "flex-end", marginBottom: "20px" }}
+      >
         <Button onClick={createNewNotes}>
           <h3 style={{ flex: 1, fontSize: "17px" }}>Save changes</h3>
           <span>
