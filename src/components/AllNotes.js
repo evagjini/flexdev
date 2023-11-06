@@ -1,6 +1,5 @@
 // @ts-ignore
 import React, { useEffect, useState } from "react";
-// import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Notes from "./Notes";

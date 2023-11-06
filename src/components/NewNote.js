@@ -11,6 +11,7 @@ export default function NewNote() {
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem("notes")) ?? []
   );
+
   const navigate = useNavigate();
 
   const createNewNotes = () => {
@@ -27,10 +28,10 @@ export default function NewNote() {
     setDescription("");
     navigate("/");
   };
+
   const onSubmitForm = (e) => {
     e.preventDefault();
   };
-
   return (
     <>
       <div className="container">

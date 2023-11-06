@@ -34,6 +34,18 @@ b) Search notes
 **Please make sure to update the readme with**:
 
 - How to run your app with all the necessary details
+
+  - Ihave created a new repo for my App with origin of repo fom Flex Github. My app runs with "npm start"
+
 - Relating to the task please add answers to the following questions;
+
   1. How might you make this app more secure?
+
+  -Error handling
+  -Authentication and Authorization
+  -Avoid using sensitive data
+
   2. How would you make this solution scale to millions of records?
+
+     -Pagination
+     -Load balancing
