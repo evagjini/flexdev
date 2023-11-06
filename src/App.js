@@ -1,14 +1,14 @@
 import "./App.css";
 import React from "react";
 import NewNote from "./components/NewNote";
-import { Route, Router, Routes } from "react-router-dom";
-import HeaderButtons from "./components/HeaderButtons";
+import { Route, Routes } from "react-router-dom";
+import AllNotes from "./components/AllNotes";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HeaderButtons />} />
-      <Route path="/NewNote" element={<NewNote />} />
+      <Route path="/" element={<AllNotes />} />
+      <Route path="/newNote" element={<NewNote />} />
     </Routes>
   );
 }

@@ -14,22 +14,12 @@ export default function Notes({ filteredNotes, deletedNotes }) {
         <>
           <div key={note.id} className="note-container">
             <div className="note-content">
-              <h3 style={{ fontSize: "25px", color: "#494948" }}>
-                {note.title}
-              </h3>
-              <p className="note-description">{note.description}</p>
+              <h3 className="title">{note.title}</h3>
+              <p>{note.description}</p>
             </div>
             <div className="header-buttons">
               <button
-                className="buttons"
-                style={{
-                  backgroundColor: "red",
-                  display: "flex",
-                  alignItems: "center",
-                  width: "150px",
-                  padding: "10px",
-                  marginTop: "60px",
-                }}
+                className="buttons delete-button"
                 onClick={() => handleDeleteNote(note.id)}
               >
                 <h3 style={{ flex: 1, color: "white" }}>Delete Note</h3>

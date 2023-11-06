@@ -1,3 +1,4 @@
+// @ts-ignore
 import React, { useEffect, useState } from "react";
 // import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,11 +7,12 @@ import Notes from "./Notes";
 import SearchBar from "./SearchBar";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
-// import NewNote from "./NewNote";
 
-function HeaderButtons() {
+function AllNotes() {
   let notes = [];
+  // @ts-ignore
   if (localStorage.key("notes")) {
+    // @ts-ignore
     notes = JSON.parse(localStorage.getItem("notes"));
   }
   const [allNotes, setAllNotes] = useState(notes);
@@ -49,12 +51,10 @@ function HeaderButtons() {
                 />
               </span>
             </Button>
-
             <div>
               <SearchBar search={search} onSearchChange={setSearch} />
             </div>
           </div>
-
           <Notes filteredNotes={filteredNotes} deletedNotes={deletedNotes} />
         </div>
       </div>
@@ -62,4 +62,4 @@ function HeaderButtons() {
   );
 }
 
-export default HeaderButtons;
+export default AllNotes;
