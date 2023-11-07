@@ -47,5 +47,5 @@ b) Search notes
 
   2. How would you make this solution scale to millions of records?
 
-     -Pagination
-     -Load balancing
+  -Pagination
+  -Load balancing

@@ -16,11 +16,6 @@
   height: 100vh;
 }
 
-.vertical-line {
-  border-left: 1px solid black;
-  height: 50px;
-  margin: 0 10px;
-}
 .buttons {
   padding: 2px;
   border-radius: 3px;
@@ -83,9 +78,6 @@
   align-items: center;
 }
 
-.break-style {
-  color: #e5eedc;
-}
 .save-buttons {
   display: flex;
   justify-content: flex-end;

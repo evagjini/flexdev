@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +10,6 @@ export default function NewNote() {
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem("notes")) ?? []
   );
-
   const navigate = useNavigate();
 
   const createNewNotes = () => {

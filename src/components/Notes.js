@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -11,7 +10,7 @@ export default function Notes({ filteredNotes, deletedNotes }) {
   return (
     <div className="all-notes">
       {filteredNotes.map((note) => (
-        <>
+        <div>
           <div key={note.id} className="note-container">
             <div className="note-content">
               <h3 className="title">{note.title}</h3>
@@ -34,7 +33,7 @@ export default function Notes({ filteredNotes, deletedNotes }) {
             </div>
           </div>
           <hr className="break-style" />
-        </>
+        </div>
       ))}
     </div>
   );
